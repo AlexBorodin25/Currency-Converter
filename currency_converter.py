@@ -3,7 +3,7 @@ import time
 
 import requests
 
-API_URL = "https://open.er-api.com/v6/latest"
+API_URL = "https://api.exchangerate.host/convert"
 CACHE_SECONDS = 3600
 DB_PATH = "currency_cache.db"
 
