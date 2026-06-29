@@ -3,6 +3,16 @@ import time
 
 import requests
 
+SUPPORTED_CURRENCIES = {
+    "1": ("USD", "US Dollar"),
+    "2": ("EUR", "Euro"),
+    "3": ("GBP", "British Pound"),
+    "4": ("JPY", "Japanese Yen"),
+    "5": ("CAD", "Canadian Dollar"),
+    "6": ("AUD", "Australian Dollar"),
+    "7": ("CHF", "Swiss Franc"),
+    "8": ("CNY", "Chinese Yuan"),
+}
 
 def connect_db():
     conn = sqlite3.connect('DB_PATH')
@@ -76,6 +86,19 @@ def get_rate(conn, from_currency, to_currency):
     rate = fetch_rate(from_currency, to_currency)
     save_cached_rate(conn, from_currency, to_currency, rate)
     return rate
+
+def choose_currency(prompt):
+    print(f"{prompt}")
+
+    for number, (code, name) in SUPPORTE_CURRENCIES.items():
+        print(f"{number}. {code} - {name}")
+
+    choice = input("Choose currency: ").strip()
+
+    if choice not in SUPPORTED_CURRENCIES:
+        raise ValueError(f"Invalid currency code.")
+
+    return SUPPORTED_CURRENCIES[choice][0]
 
 def menu():
     print("Welcome to the currency converter.")
