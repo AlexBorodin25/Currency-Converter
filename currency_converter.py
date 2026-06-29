@@ -113,7 +113,45 @@ def get_amount():
 
     return amount
 
+def convert_currency(conn):
+    try:
+        from_currency = choose_currency("From currency: ")
+        to_currency = choose_currency("To currency: ")
+        amount = get_amount()
+
+        rate = get_rate(conn, from_currency, to_currency)
+        converted_amount = amount * rate
+
+        print(f"{amount:.2f} {from_currency} = {converted_amount:.2f} {to_currency}")
+        print(f"Rate: 1 {from_currency} = {rate:.6f} {to_currency}")
+
+    except request.RequestException as error:
+        print(f"Network/API error: {error}")
+    except ValueError as error:
+        print(f"Input error: {error}")
+
 
 def menu():
     print("Welcome to the currency converter.")
     print("1. Convert Currency")
+    print("2. Exit")
+
+def main():
+    conn = connect_db()
+
+    while True:
+        menu()
+        choice = input("Enter choice: ").strip()
+
+        if choice == "1":
+            convert_currency(conn)
+        elif choice == "2":
+            print("Goodbye.")
+            break
+        else:
+            print("Invalid choice.")
+
+    conn.close()
+
+if __name__ == "__main__":
+    main()
