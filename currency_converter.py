@@ -47,3 +47,22 @@ def save_conv_rate(conn, from_currency, to_currency, rate):
             saved_at = excluded.saved_at
     """, (from_currency, to_currency, rate, int(time.time())))
     conn.commit()
+
+def fetch_rate(from_currency, to_currency):
+    params = {"from": from_currency, "to": to_currency, "amount": 1,}
+
+    response = requests.get(API_URL, params=params, timeout=10)
+    response.raise_for_status()
+
+    data = response.json()
+
+    if not data.get("success", True):
+        raise ValueError("API returned an error.")
+
+    result = data.get("result")
+
+    if result is None:
+        raise ValueError("Could not find exchange rate.")
+
+    return float(result)
+
