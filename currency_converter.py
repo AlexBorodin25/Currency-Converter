@@ -100,6 +100,20 @@ def choose_currency(prompt):
 
     return SUPPORTED_CURRENCIES[choice][0]
 
+def get_amount():
+    raw_amount = input("Enter amount: ").strip()
+
+    try:
+        amount = float(raw_amount)
+    except ValueError:
+        raise ValueError("Invalid amount.")
+
+    if amount < 0:
+        raise ValueError("Cannot be negative.")
+
+    return amount
+
+
 def menu():
     print("Welcome to the currency converter.")
     print("1. Convert Currency")
