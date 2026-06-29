@@ -3,6 +3,10 @@ import time
 
 import requests
 
+API_URL = "https://open.er-api.com/v6/latest"
+CACHE_SECONDS = 3600
+DB_PATH = "currency_cache.db"
+
 SUPPORTED_CURRENCIES = {
     "1": ("USD", "US Dollar"),
     "2": ("EUR", "Euro"),
@@ -15,7 +19,7 @@ SUPPORTED_CURRENCIES = {
 }
 
 def connect_db():
-    conn = sqlite3.connect('DB_PATH')
+    conn = sqlite3.connect(DB_PATH)
 
     conn.execute('''
     CREATE TABLE IF NOT EXISTS conv_rates (
@@ -52,7 +56,7 @@ def save_cached_rate(conn, from_currency, to_currency, rate):
     conn.execute("""
         INSERT INTO conv_rates (from_currency, to_currency, rate, saved_at)
         VALUES (?, ?, ?, ?)
-        ON CONFLICT (from_currency, to_currency) DO NOTHING SET
+        ON CONFLICT(from_currency, to_currency) DO UPDATE SET
             rate = excluded.rate,
             saved_at = excluded.saved_at
     """, (from_currency, to_currency, rate, int(time.time())))
@@ -90,7 +94,7 @@ def get_rate(conn, from_currency, to_currency):
 def choose_currency(prompt):
     print(f"{prompt}")
 
-    for number, (code, name) in SUPPORTE_CURRENCIES.items():
+    for number, (code, name) in SUPPORTED_CURRENCIES.items():
         print(f"{number}. {code} - {name}")
 
     choice = input("Choose currency: ").strip()
@@ -125,7 +129,7 @@ def convert_currency(conn):
         print(f"{amount:.2f} {from_currency} = {converted_amount:.2f} {to_currency}")
         print(f"Rate: 1 {from_currency} = {rate:.6f} {to_currency}")
 
-    except request.RequestException as error:
+    except requests.RequestException as error:
         print(f"Network/API error: {error}")
     except ValueError as error:
         print(f"Input error: {error}")
