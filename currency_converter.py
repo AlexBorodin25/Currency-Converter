@@ -1,4 +1,6 @@
 import sqlite3
+import time
+
 import requests
 
 
@@ -16,3 +18,17 @@ def connect_db():
 
     conn.commit()
     return conn
+
+def get_conv_rate(conn, from_currency, to_currency):
+    row = conn.execute("""
+        SELECT rate, saved_at
+        FROM conv_rates
+        WHERE from_currency = ? AND to_currency = ?
+    """, (from_currency, to_currency)).fetchone()
+
+    if not row:
+        return None
+
+    rate, saved_at = row
+    age = time.time() - saved_at
+
