@@ -77,7 +77,7 @@ def fetch_rate(from_currency, to_currency):
     rates = data.get("rates", {})
     rate = rates.get(to_currency)
 
-    if result is None:
+    if rate is None:
         raise ValueError("Could not find exchange rate.")
 
     return float(rate)
