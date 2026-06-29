@@ -32,3 +32,18 @@ def get_conv_rate(conn, from_currency, to_currency):
     rate, saved_at = row
     age = time.time() - saved_at
 
+    if age > CACHE_SECONDS:
+        return None
+
+    return rate
+
+
+def save_conv_rate(conn, from_currency, to_currency, rate):
+    conn.execute("""
+        INSERT INTO conv_rates (from_currency, to_currency, rate, saved_at)
+        VALUES (?, ?, ?, ?)
+        ON CONFLICT (from_currency, to_currency) DO NOTHING SET
+            rate = excluded.rate,
+            saved_at = excluded.saved_at
+    """, (from_currency, to_currency, rate, int(time.time())))
+    conn.commit()
