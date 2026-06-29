@@ -3,7 +3,7 @@ import time
 
 import requests
 
-API_URL = "https://api.exchangerate.host/convert"
+API_URL = "https://open.er-api.com/v6/latest"
 CACHE_SECONDS = 3600
 DB_PATH = "currency_cache.db"
 
@@ -63,22 +63,24 @@ def save_cached_rate(conn, from_currency, to_currency, rate):
     conn.commit()
 
 def fetch_rate(from_currency, to_currency):
-    params = {"from": from_currency, "to": to_currency, "amount": 1,}
+    url = f"{API_URL}/{from_currency}"
 
-    response = requests.get(API_URL, params=params, timeout=10)
+    response = requests.get(url, timeout=10)
     response.raise_for_status()
 
     data = response.json()
 
-    if not data.get("success", True):
-        raise ValueError("API returned an error.")
+    if data.get("result") != "success":
+        error_type = data.get("error-type", "unknown error")
+        raise ValueError(f"API returned an error: {error_type}")
 
-    result = data.get("result")
+    rates = data.get("rates", {})
+    rate = rates.get(to_currency)
 
     if result is None:
         raise ValueError("Could not find exchange rate.")
 
-    return float(result)
+    return float(rate)
 
 
 def get_rate(conn, from_currency, to_currency):
