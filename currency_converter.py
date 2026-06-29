@@ -19,7 +19,7 @@ def connect_db():
     conn.commit()
     return conn
 
-def get_conv_rate(conn, from_currency, to_currency):
+def get_cached_rate(conn, from_currency, to_currency):
     row = conn.execute("""
         SELECT rate, saved_at
         FROM conv_rates
@@ -38,7 +38,7 @@ def get_conv_rate(conn, from_currency, to_currency):
     return rate
 
 
-def save_conv_rate(conn, from_currency, to_currency, rate):
+def save_cached_rate(conn, from_currency, to_currency, rate):
     conn.execute("""
         INSERT INTO conv_rates (from_currency, to_currency, rate, saved_at)
         VALUES (?, ?, ?, ?)
@@ -66,3 +66,17 @@ def fetch_rate(from_currency, to_currency):
 
     return float(result)
 
+
+def get_rate(conn, from_currency, to_currency):
+    cached_rate = get_cached_rate(conn, from_currency, to_currency)
+
+    if cached_rate is not None:
+        print("Using cached rate.")
+        return cached_rate
+    rate = fetch_rate(from_currency, to_currency)
+    save_cached_rate(conn, from_currency, to_currency, rate)
+    return rate
+
+def menu():
+    print("Welcome to the currency converter.")
+    print("1. Convert Currency")
