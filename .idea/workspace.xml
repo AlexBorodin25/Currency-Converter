@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a42f7e5-b86b-4338-b831-760f123b1297" name="Changes" comment="updated dockerfile" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="14" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlexBorodin25&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AlexBorodin25/Currency-Converter.git&quot;,
+    &quot;accountId&quot;: &quot;1eccda67-5a13-465e-b09d-861f8916fc69&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000030477616353" />
+      <entry key="S2" value="1.1543873872786892" />
+      <entry key="S5" value="2.8910353085722633" />
+      <entry key="S10" value="7.0065608665844685" />
+      <entry key="S30" value="23.45904623385817" />
+      <entry key="S60" value="41.49301479520087" />
+      <entry key="M2" value="60.43008770199787" />
+      <entry key="M5" value="78.51485784508036" />
+      <entry key="M10" value="86.37112024059965" />
+      <entry key="M15" value="89.55952467816213" />
+      <entry key="M30" value="94.16157729593081" />
+      <entry key="H1" value="108.98837552452069" />
+      <entry key="H2" value="183.15023096438966" />
+      <entry key="H4" value="327.28040196556384" />
+      <entry key="D1" value="624.9943033472542" />
+      <entry key="W1" value="706.2705387625937" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="7.332722787662267E-137" />
+      <entry key="S60" value="8.563131896486389E-69" />
+      <entry key="M2" value="9.253719196348232E-35" />
+      <entry key="M5" value="2.435154535310387E-14" />
+      <entry key="M10" value="1.5605362468080804E-7" />
+      <entry key="M15" value="2.9015655323616016E-5" />
+      <entry key="M30" value="0.005629924340445882" />
+      <entry key="H1" value="0.09554178579122463" />
+      <entry key="H2" value="0.48138854002823434" />
+      <entry key="H4" value="1.1692851093752652" />
+      <entry key="D1" value="2.5547148696694046" />
+      <entry key="W1" value="2.9316745515893023" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="5.664135803238262E-28" />
+      <entry key="MS500" value="5.545836668418244E-6" />
+      <entry key="S2" value="0.18406710411054933" />
+      <entry key="S5" value="2.1259832717783906" />
+      <entry key="S10" value="6.48516961465421" />
+      <entry key="S30" value="23.22507487833922" />
+      <entry key="S60" value="41.35804430744643" />
+      <entry key="M2" value="60.354885795946394" />
+      <entry key="M5" value="78.48210863865671" />
+      <entry key="M10" value="86.35412203094812" />
+      <entry key="M15" value="89.5479478953757" />
+      <entry key="M30" value="94.16103312292957" />
+      <entry key="H1" value="109.079544402299" />
+      <entry key="H2" value="183.6255857792291" />
+      <entry key="H4" value="328.44271775799984" />
+      <entry key="D1" value="627.5464511031012" />
+      <entry key="W1" value="709.2017909674091" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FgytTUAFBbdCK7YbLZ6QwiW72X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.currency_converter.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="currency_converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Currency-Converter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/currency_converter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.currency_converter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a42f7e5-b86b-4338-b831-760f123b1297" name="Changes" comment="" />
+      <created>1782511222369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782511222369</updated>
+      <workItem from="1782511223438" duration="1871000" />
+      <workItem from="1782759216424" duration="6297000" />
+      <workItem from="1783362428193" duration="622000" />
+      <workItem from="1783443798678" duration="150000" />
+      <workItem from="1783443960595" duration="494000" />
+      <workItem from="1783445813837" duration="4198000" />
+    </task>
+    <task id="LOCAL-00001" summary="added connect_db">
+      <option name="closed" value="true" />
+      <created>1782759519443</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782759519443</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added get_conv_rate">
+      <option name="closed" value="true" />
+      <created>1782759722298</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782759722298</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added save_conv_rate">
+      <option name="closed" value="true" />
+      <created>1782759910215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782759910215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added fetch_rate">
+      <option name="closed" value="true" />
+      <created>1782760230206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782760230206</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added get_rate">
+      <option name="closed" value="true" />
+      <created>1782760626003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782760626003</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added supported_currencies and choose_currency">
+      <option name="closed" value="true" />
+      <created>1782760869046</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782760869046</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added get_amount">
+      <option name="closed" value="true" />
+      <created>1782760991341</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1782760991341</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added convert_currency and main">
+      <option name="closed" value="true" />
+      <created>1782761421543</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1782761421543</updated>
+    </task>
+    <task id="LOCAL-00009" summary="debugging">
+      <option name="closed" value="true" />
+      <created>1782761821705</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1782761821705</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added requirements.txt">
+      <option name="closed" value="true" />
+      <created>1782761879376</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1782761879376</updated>
+    </task>
+    <task id="LOCAL-00011" summary="debugging">
+      <option name="closed" value="true" />
+      <created>1782762051836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1782762051836</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed fetch_rate">
+      <option name="closed" value="true" />
+      <created>1782764089167</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1782764089167</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixed fetch_rate">
+      <option name="closed" value="true" />
+      <created>1782764211582</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1782764211582</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added dockerfile and .dockerignore">
+      <option name="closed" value="true" />
+      <created>1782764521011</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1782764521011</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added dockerfile and .dockerignore">
+      <option name="closed" value="true" />
+      <created>1782764524414</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1782764524414</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed .gitignore">
+      <option name="closed" value="true" />
+      <created>1783443843315</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1783443843315</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated requirements.txt">
+      <option name="closed" value="true" />
+      <created>1783445864410</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1783445864410</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated dockerfile">
+      <option name="closed" value="true" />
+      <created>1783449923109</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1783449923109</updated>
+    </task>
+    <task id="LOCAL-00019" summary="closed db connection">
+      <option name="closed" value="true" />
+      <created>1783450651160</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1783450651160</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated dockerfile">
+      <option name="closed" value="true" />
+      <created>1783460842178</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1783460842178</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added connect_db" />
+    <MESSAGE value="added get_conv_rate" />
+    <MESSAGE value="added save_conv_rate" />
+    <MESSAGE value="added fetch_rate" />
+    <MESSAGE value="added get_rate" />
+    <MESSAGE value="added supported_currencies and choose_currency" />
+    <MESSAGE value="added get_amount" />
+    <MESSAGE value="added convert_currency and main" />
+    <MESSAGE value="added requirements.txt" />
+    <MESSAGE value="debugging" />
+    <MESSAGE value="fixed fetch_rate" />
+    <MESSAGE value="added dockerfile and .dockerignore" />
+    <MESSAGE value="fixed .gitignore" />
+    <MESSAGE value="updated requirements.txt" />
+    <MESSAGE value="closed db connection" />
+    <MESSAGE value="updated dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated dockerfile" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Currency_Converter$currency_converter.coverage" NAME="currency_converter Coverage Results" MODIFIED="1782759609234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
