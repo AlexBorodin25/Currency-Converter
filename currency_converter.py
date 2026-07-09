@@ -145,19 +145,20 @@ def menu():
 def main():
     conn = connect_db()
 
-    while True:
-        menu()
-        choice = input("Enter choice: ").strip()
+    try:
+        while True:
+            menu()
+            choice = input("Enter choice: ").strip()
 
-        if choice == "1":
-            convert_currency(conn)
-        elif choice == "2":
-            print("Goodbye.")
-            break
-        else:
-            print("Invalid choice.")
-
-    conn.close()
+            if choice == "1":
+                convert_currency(conn)
+            elif choice == "2":
+                print("Goodbye.")
+                break
+            else:
+                print("Invalid choice.")
+    finally:
+        conn.close()
 
 if __name__ == "__main__":
     main()

@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Database files
+*.db
+.currency_cache.db
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.iml
